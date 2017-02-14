@@ -1,0 +1,69 @@
+I, [2017-02-14T00:15:20.430593 #4937]  INFO -- Kitchen: -----> Starting Kitchen (v1.15.0)
+E, [2017-02-14T00:15:20.462264 #4937] ERROR -- Kitchen: ------Exception-------
+E, [2017-02-14T00:15:20.463463 #4937] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2017-02-14T00:15:20.464098 #4937] ERROR -- Kitchen: Message: Could not load the 'vagrant' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2017-02-14T00:15:20.464715 #4937] ERROR -- Kitchen: ----------------------
+E, [2017-02-14T00:15:20.465352 #4937] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-14T00:15:20.465789 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/driver.rb:48:in `rescue in for_plugin'
+E, [2017-02-14T00:15:20.466662 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/driver.rb:38:in `for_plugin'
+E, [2017-02-14T00:15:20.467224 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:233:in `new_driver'
+E, [2017-02-14T00:15:20.467791 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:246:in `new_instance'
+E, [2017-02-14T00:15:20.468348 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:142:in `block in build_instances'
+E, [2017-02-14T00:15:20.468933 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `map'
+E, [2017-02-14T00:15:20.469567 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `with_index'
+E, [2017-02-14T00:15:20.470124 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-02-14T00:15:20.470741 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-02-14T00:15:20.471172 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-02-14T00:15:20.471720 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-02-14T00:15:20.472268 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2017-02-14T00:15:20.472934 #4937] ERROR -- Kitchen: /usr/local/rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-02-14T00:15:20.474260 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-02-14T00:15:20.474884 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-02-14T00:15:20.475449 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-02-14T00:15:20.476025 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+E, [2017-02-14T00:15:20.476761 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-02-14T00:15:20.477432 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-02-14T00:15:20.478188 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+E, [2017-02-14T00:15:20.478768 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+E, [2017-02-14T00:15:20.479378 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-02-14T00:15:20.479955 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-02-14T00:15:20.480919 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-02-14T00:15:20.481429 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/kitchen:22:in `load'
+E, [2017-02-14T00:15:20.481811 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/kitchen:22:in `<main>'
+E, [2017-02-14T00:15:20.482318 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-02-14T00:15:20.482758 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-02-14T00:15:20.483189 #4937] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-02-14T00:15:20.483536 #4937] ERROR -- Kitchen: ---Nested Exception---
+E, [2017-02-14T00:15:20.483972 #4937] ERROR -- Kitchen: Class: LoadError
+E, [2017-02-14T00:15:20.484422 #4937] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/vagrant
+E, [2017-02-14T00:15:20.484894 #4937] ERROR -- Kitchen: ----------------------
+E, [2017-02-14T00:15:20.485316 #4937] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-14T00:15:20.485714 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/driver.rb:48:in `rescue in for_plugin'
+E, [2017-02-14T00:15:20.486198 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/driver.rb:38:in `for_plugin'
+E, [2017-02-14T00:15:20.486637 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:233:in `new_driver'
+E, [2017-02-14T00:15:20.487050 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:246:in `new_instance'
+E, [2017-02-14T00:15:20.487447 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:142:in `block in build_instances'
+E, [2017-02-14T00:15:20.487925 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `map'
+E, [2017-02-14T00:15:20.488670 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `with_index'
+E, [2017-02-14T00:15:20.489318 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-02-14T00:15:20.489886 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-02-14T00:15:20.490434 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-02-14T00:15:20.491055 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-02-14T00:15:20.491613 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2017-02-14T00:15:20.492092 #4937] ERROR -- Kitchen: /usr/local/rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-02-14T00:15:20.492544 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-02-14T00:15:20.493031 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-02-14T00:15:20.493470 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-02-14T00:15:20.494055 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+E, [2017-02-14T00:15:20.494646 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-02-14T00:15:20.495120 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-02-14T00:15:20.495573 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+E, [2017-02-14T00:15:20.495990 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+E, [2017-02-14T00:15:20.496382 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-02-14T00:15:20.496772 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-02-14T00:15:20.497222 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-02-14T00:15:20.497668 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/kitchen:22:in `load'
+E, [2017-02-14T00:15:20.498081 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/kitchen:22:in `<main>'
+E, [2017-02-14T00:15:20.498502 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-02-14T00:15:20.498883 #4937] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-02-14T00:15:20.499250 #4937] ERROR -- Kitchen: ----End Backtrace-----

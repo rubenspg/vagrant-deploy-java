@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/Rubens/workspace/vagrant-java-deploy","disabled":false,"__vagrantfile":true},"v-csc-be197b7bb":{"id":"v-csc-be197b7bb","guestpath":"/tmp/vagrant-chef/6a86ddad4a0cafddb2fd269775a25381/cookbooks","hostpath":"C:/Users/Rubens/workspace/vagrant-java-deploy/cookbooks","disabled":false,"__vagrantfile":true}}}
